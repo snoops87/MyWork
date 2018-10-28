@@ -19,7 +19,6 @@
 		</colgroup>
 		<thead>
 			<tr align="center">
-				<th>번호</th>
 				<th>제목</th>
 				<th>등록일자</th>
 				<th>수정일자</th>
@@ -28,7 +27,7 @@
 		<c:forEach var="list" items="${list}">
 		<tbody>
 			<tr align="center">
-				<td>${list.boardId}</td>
+				<input type="hidden" id="boardId" value="${dto.boardId}">
 				<td><a href="${path}/board/view.do?boardId=${list.boardId}">${list.title}</a></td>
 				<td><fmt:formatDate value="${list.regDate}" pattern="yyyy-MM-dd HH:mm:ss" /></td>
 				<td><fmt:formatDate value="${list.modDate}" pattern="yyyy-MM-dd HH:mm:ss" /></td>

@@ -6,18 +6,9 @@
 <head>
 <meta charset="UTF-8">
 <title>VIEW</title>
-<script type="text/javascript">
-	function btn_event(){
-		if(confirm("삭제하시겠습니까?") == true){
-			location.href ="${path}/board/delete.do?boardId=${dto.boardId}";
-		}else{
-			return;
-		}
-	}
-</script>
 </head>
 <body>
-<form name="form" method="get">
+<form name="form" method="post">
 <div align="center">
 	<%@ include file="../include/menu.jsp" %>	
 	<table border="1" align="center" >
@@ -29,7 +20,7 @@
 			</tr>
 			<tr>	
 				<td colspan="2" align="right">
-					<input type="hidden" name="boardId" value="${dto.boardId}">
+					<input type="hidden" id="boardId" value="${dto.boardId}">
 					<a href="${path}/board/update?boardId=${dto.boardId}">수정</a>
 					<a href="${path}/board/delete.do?boardId=${dto.boardId}">삭제</a>
 				</td>
