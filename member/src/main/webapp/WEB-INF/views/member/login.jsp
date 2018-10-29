@@ -13,7 +13,7 @@
 			var userId = $("#userId").val();
 			var password = $("#password").val();
 			if(userId == ""){
-				alert("아이디를 입력하세요.");
+				alert("아이디를 입력하세요.");  
 				$("#userId").focus();
 				return;
 			}
