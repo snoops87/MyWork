@@ -10,9 +10,17 @@
 		<setting name="jdbcTypeForNull" value="NULL"/>
 	</settings>
 	<typeAliases>
+<<<<<<< HEAD
 		<package name="com.board.example" />
 		<package name="com.board.member" />
 	</typeAliases>
 
 </configuration>
  
+=======
+		<package name="com.board.member" />
+	</typeAliases>
+
+</configuration>
+
+>>>>>>> refs/remotes/origin/master
